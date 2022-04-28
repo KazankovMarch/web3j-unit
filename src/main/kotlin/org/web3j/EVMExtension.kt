@@ -76,6 +76,7 @@ open class EVMExtension : ExecutionCondition, BeforeAllCallback, AfterAllCallbac
         transactionManager = FastRawTransactionManager(
             web3j,
             credentials,
+            web3j.ethChainId().id,
             PollingTransactionReceiptProcessor(
                 web3j,
                 1000,
