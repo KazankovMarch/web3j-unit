@@ -77,6 +77,7 @@ dependencies {
     implementation "org.hyperledger.besu.internal:util:$besuInternalVersion"
     implementation "org.hyperledger.besu:bls12-381:$besuCryptoDepVersion"
     implementation "org.hyperledger.besu:secp256k1:$besuCryptoDepVersion"
+    implementation 'net.java.dev.jna:jna-platform:5.8.0' // MacOS ad-hoc https://stackoverflow.com/a/70369813/13459489
 }
 
 test {
